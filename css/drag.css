@@ -1,0 +1,81 @@
+
+/*移动窗口*/
+.drag-dialog {
+  background-color: #fff;
+  border: 4px double #aaa;
+  border-radius: 5px;
+  height: auto;
+  padding: 0;
+  position: fixed;
+  width: auto;
+  z-index: 9998;
+}
+.drag-dialog .drag-title {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #fff, #bdc6cd) repeat scroll 0 0;
+  border-bottom: 1px solid #b6bec5;
+  border-top: 1px solid #edf5f8;
+  cursor: move;
+  font-size: 15px;
+  font-weight: bold;
+  height: 28px;
+  line-height: 27px;
+  margin: 0;
+  padding: 0 6px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+.drag-dialog .drag-title:active 
+{
+   
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #bdc6cd, #edf5f8) repeat scroll 0 0;
+}
+.drag-dialog .drag-content{ padding:15px; margin:0;position:relative; min-height:30px;}
+
+.drag-dialog .drag-foot {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dadee5;
+  bottom: 0;
+  padding: 5px;
+  position: relative;
+  text-align: right;
+}
+.drag-dialog .drag-foot button {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #fff, #ddd) repeat scroll 0 0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7), 0 -1px 0 rgba(0, 0, 0, 0.09);
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-left: 15px;
+  overflow: visible;
+  padding: 6px 8px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+  transition: box-shadow 0.2s linear 0s;
+  width: auto;
+}
+
+.drag-dialog .drag-foot button:focus {
+    border-color: #426dc9;
+    box-shadow: 0 0 8px rgba(66, 109, 201, 0.9);
+    outline: 0 none;
+}
+.drag-dialog .drag-foot button:hover {
+    border-color: #666;
+    color: #000;
+}
+.drag-dialog .drag-foot button:active {
+    background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #ddd, #fff) repeat scroll 0 0;
+    border-color: #666;
+    box-shadow: 0 1px 5px rgba(66, 109, 201, 0.9) inset, 0 1px 1em rgba(0, 0, 0, 0.3) inset;
+}
+.drag-dialog .drag-foot button[disabled] {
+    background: #ddd none repeat scroll 0 0;
+    border: 1px solid #999;
+    box-shadow: none;
+    color: #666;
+    cursor: default;
+    opacity: 0.5;
+}
